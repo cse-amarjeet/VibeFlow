@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --breathe-in-time: 4.5s;
+  --breathe-out-time: 10s;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@keyframes grow {
+  from { transform: scale(1); }
+  to { transform: scale(1.2); }
+}
+
+@keyframes shrink {
+  from { transform: scale(1.2); }
+  to { transform: scale(1); }
+}
+
+.animate-grow {
+  animation: grow var(--breathe-in-time, 4.5s) ease-in-out forwards;
+}
+
+.animate-shrink {
+  animation: shrink var(--breathe-out-time, 10s) ease-in-out forwards;
+}
