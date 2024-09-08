@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# VibeFlow: Your go-to companion for breathing exercises, meditation, and AI-powered support for stress relief, mindfulness, and mental well-being.
 
-## Getting Started
+## Description
 
-First, run the development server:
+VibeFlow is a comprehensive well-being assistant designed to help users manage stress, reduce anxiety, and foster positive mental health. It features a range of tools including breathing exercises, meditation videos, and an AI-powered assistant. The AI provides compassionate, evidence-based advice to guide users through their emotions and challenges, offering tailored mindfulness exercises, breathing techniques, and personalized recommendations based on their input.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+The application leverages the Llama 3 model through Ollama for advanced natural language processing and generation, delivering a responsive and intelligent conversational experience.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+- **Next.js 14** (React framework)
+- **TypeScript**
+- **Tailwind CSS**
+- **Ollama** (for local deployment of the Llama 3 model)
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Prerequisites
 
-## Learn More
+- Node.js (version 18 or later)
+- Ollama installed and operational on your local machine
 
-To learn more about Next.js, take a look at the following resources:
+## Setup and Running the Project
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Clone the repository:
+   ```
+   git clone https://github.com/cse-amarjeet/VibeFlow.git
+   cd VibeFlow
+   ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+2. Install dependencies:
+   ```
+   npm install
+   ```
 
-## Deploy on Vercel
+3. Ensure Ollama is running locally with the Llama 3 model loaded. If Ollama is not installed, download it from [this link](https://ollama.com/download).
+   ```
+   ollama run llama3
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+4. Start the development server:
+   ```
+   npm run dev
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+5. Open your browser and go to `http://localhost:3000` to access the application.
+
+## Features
+
+- Customized breathing exercises with sound
+- Meditation videos with high-quality sound
+- Real-time chat interface
+- AI-powered responses using the Llama 3 model
+- Mindfulness exercises and breathing techniques
+- Personalized mental health advice
